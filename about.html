@@ -22,6 +22,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +31,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -44,6 +47,20 @@
     /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+
+    .hero-section h2 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 700;
+    }
+
+    .hero-section h1 {
+      margin: 10px 0 6px 0;
+      font-size: 56px;
+      font-weight: 700;
+
+    }
+
     .about .about-meta {
       color: var(--accent-color);
       font-weight: 600;
@@ -56,6 +73,16 @@
       margin-bottom: 1rem;
       line-height: 1.2;
       font-weight: 700;
+    }
+
+
+    .hero-section {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 6rem;
     }
 
     @media (max-width: 992px) {
@@ -303,6 +330,126 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+
+
+
+
+    .carousel{
+      background-color: #fff;
+      margin-top: -3rem;
+      padding: 0 4rem;
+    }
+    .carousel-inner{
+      background-color: #F9F9F9;
+      border-radius: 20px 20px 0 0;
+    }
+    .cards-secttion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(99%) saturate(2644%) hue-rotate(0deg) brightness(95%) contrast(101%);
+    position: absolute;
+    bottom: 30%;
+  }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px 20px;
+      width: 260px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.014);
+      border: 1.20px solid #e7304273;
+    }
+
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 200px;
+      margin: 0 0 10px;
+      perspective: 1000px;
+    }
+
+    .flip-img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      position: relative;
+    }
+
+    .img-container:hover .flip-img {
+      transform: rotateY(180deg);
+    }
+
+    .flip-img img {
+      position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  top: 0;
+  left: 0;
+    }
+
+    .flip-img img.back {
+      transform: rotateY(180deg);
+    }
+
+    h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 0 10px;
+      color: #555;
+      font-size: 14px;
+    }
+
+    .social-icons a {
+      margin: 0 2px;
+      text-decoration: none;
+    }
+
+    .social-icons a i {
+      color: #fff;
+      background-color: var(--accent-color);
+      font-size: 18px;
+      padding: 6px;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+    }
+    @media screen and (max-width:980px) {
+      .cards-secttion{
+        flex-wrap: wrap;
+      }
+    }
+     @media screen and (max-width:680px) {
+      .hero-section h1{
+        font-size: 2.2rem;
+      }
+      .hero-section h2{
+        font-size: 2rem;
+      }
+      .hero-section{
+        padding: 4rem 2rem;
+      }
+      .carousel{
+        padding: 0 1.4rem;
+      }
+    }
   </style>
 </head>
 
@@ -355,25 +502,211 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
-      <!-- <video class="video-background" autoplay muted loop playsinline>
-        <source src="assets/img/Video-bg/video4.mp4" type="video/mp4">
-      </video> -->
-      <img class="video-background" src="assets/img/gallery/Training Background Image.jpg" />
 
-      <div class="container hero-section-text">
-        <h2 data-aos="fade-up" data-aos-delay="100" class="hero-text">We Don’t Just Market — We Make You a Brand</h2>
-        <p data-aos="fade-up" data-aos-delay="200" class="hero-text">At Masters Enterprises, branding is more than just
-          design — it’s about meaning, emotion, and connection. Whether you’re a person, product, place, or event, we
-          craft your identity across digital platforms with purpose-driven creativity and smart strategy. Because you’re
-          not just another name — you’re a brand in the making.</p>
-        <!-- <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
-          <a href="contact.html#contact" class="btn-get-started">Request a Free Consultation</a>
-        </div> -->
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <h1>MEET THE TEAM
+      </h1>
+      <h2>THE CREATIVE MASTERS</h2>
+    </div>
+    <!-- Hero Section -->
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div class="cards-secttion">
+
+            <!-- Card Start Here -->
+            <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Abhishek Sinha</h3>
+              <p>Founder</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+            <!-- Card Start Here -->
+             <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Vivek Gawade</h3>
+              <p>Co-Founder</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+
+            <!-- Card Start Here -->
+            <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/Akanksha Front Image.jpeg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/Akanksha BackImage.jpeg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Akanksha Ghotkar</h3>
+              <p>Co-Founder</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+          </div>
+        
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+         <div class="cards-secttion">
+
+            <!-- Card Start Here -->
+            <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Abhishek Singh</h3>
+              <p>Web Developer</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+            <!-- Card Start Here -->
+             <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Reshma Gorde</h3>
+              <p>Sales & E-mail Marketing Executive</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+
+            <!-- Card Start Here -->
+            <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/Bhumi Front Image.jpeg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/Bhumi Back Image.jpeg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Bhumi Nagda</h3>
+              <p>Social Media Marketing Executive</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="cards-secttion">
+
+            <!-- Card Start Here -->
+            <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Lucy</h3>
+              <p>In-house CCTV</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+            <!-- Card Start Here -->
+             <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/Kausar Front Image.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/Kausar Back Image.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Kausar</h3>
+              <p>Web Developer</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <!-- Card End Here -->
+
+            <!-- Card Start Here -->
+            <!-- <div class="card">
+              <div class="img-container">
+                <div class="flip-img">
+                  <img src="assets/img/team/team-1.jpg" alt="Abhishek Sniha" class="front">
+                  <img src="assets/img/team/team-2.jpg" alt="Abhishek Sniha" class="back">
+                </div>
+              </div>
+              <h3>Abhishek Sniha</h3>
+              <p>Founder</p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div> -->
+            <!-- Card End Here -->
+          </div>
+      </div>
       </div>
 
-    </section><!-- /Hero Section -->
+ 
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -592,7 +925,10 @@
           <div class="col-xl-10">
             <div class="text-center">
               <h3>Meet Our Expertise</h3>
-              <p>At Masters Enterprises Digital Company, our team of SEO experts, digital marketers, content strategists, and web developers work together to deliver cutting-edge digital solutions. We are committed to helping businesses boost online visibility, generate leads, and achieve long-term success.</p>
+              <p>At Masters Enterprises Digital Company, our team of SEO experts, digital marketers, content
+                strategists, and web developers work together to deliver cutting-edge digital solutions. We are
+                committed to helping businesses boost online visibility, generate leads, and achieve long-term success.
+              </p>
               <!-- <a class="cta-btn" href="#">Call To Action</a> -->
             </div>
           </div>
@@ -624,7 +960,7 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <a href="index.html" class="logo d-flex align-items-center">
               <!-- <span class="sitename">Presento</span> -->
-              <img src="assets/img/logo/logo-2.png" alt="">
+              <img src="assets/img/logo/logo.png" alt="">
             </a>
             <div class="footer-contact pt-3">
               <p>Experience the Best Digital Marketing Agency and Website Design Services! We Provide SEO, PPC, Social
@@ -725,6 +1061,75 @@
       updateCount();
     });
 
+  </script>
+
+
+  <script>
+    const cInner = document.querySelector("#cCarousel-inner");
+    const vp = document.querySelector("#carousel-vp");
+    const prev = document.querySelector("#prev");
+    const next = document.querySelector("#next");
+
+    const visibleCards = 3;
+    let cards = [...document.querySelectorAll(".cCarousel-item")];
+    const cardWidth = cards[0].getBoundingClientRect().width + 20; // +gap
+    let index = visibleCards;
+
+    // Clone last 3 to beginning and first 3 to end
+    for (let i = cards.length - visibleCards; i < cards.length; i++) {
+      const clone = cards[i].cloneNode(true);
+      cInner.prepend(clone);
+    }
+    for (let i = 0; i < visibleCards; i++) {
+      const clone = cards[i].cloneNode(true);
+      cInner.appendChild(clone);
+    }
+
+    // Update cards list
+    cards = [...document.querySelectorAll(".cCarousel-item")];
+
+    let totalCards = cards.length;
+    let left = -index * cardWidth;
+    cInner.style.left = left + "px";
+
+    function moveTo(newIndex) {
+      index = newIndex;
+      cInner.style.transition = "left 0.5s ease";
+      cInner.style.left = -index * cardWidth + "px";
+
+      // Looping logic after animation
+      setTimeout(() => {
+        if (index >= totalCards - visibleCards) {
+          index = visibleCards;
+          cInner.style.transition = "none";
+          cInner.style.left = -index * cardWidth + "px";
+        } else if (index < visibleCards) {
+          index = totalCards - visibleCards * 2;
+          cInner.style.transition = "none";
+          cInner.style.left = -index * cardWidth + "px";
+        }
+      }, 500);
+    }
+
+    function slideNext() {
+      moveTo(index + visibleCards);
+    }
+
+    function slidePrev() {
+      moveTo(index - visibleCards);
+    }
+
+    next.addEventListener("click", slideNext);
+    prev.addEventListener("click", slidePrev);
+
+    // Auto slide
+    let autoSlide = setInterval(slideNext, 3000);
+
+    // Pause on hover
+    vp.addEventListener("mouseenter", () => clearInterval(autoSlide));
+    vp.addEventListener("mouseleave", () => {
+      autoSlide = setInterval(slideNext, 3000);
+    });
   </script>
 
 </body>

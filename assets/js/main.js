@@ -277,6 +277,15 @@ particlesJS('particle-container', {
     });
 
 
+    // JS for autotype
+     const exampleText = ['I can write a whole sentence.', 'Or', 'single', 'words'];
+    const exampleTyping = new AutoTyping('.typewriter-text', exampleText, {
+        typeSpeed: 50,
+        deleteSpeed: 50,
+        waitBeforeDelete: 2000,
+        waitBetweenWords: 500,
+    });
+    exampleTyping.start()
 
 
 
