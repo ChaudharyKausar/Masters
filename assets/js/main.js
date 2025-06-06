@@ -58,6 +58,17 @@
     });
   });
 
+
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   document.querySelectorAll('.navmenu .dropdown ul li.dropdown > a').forEach(link => {
+  //     link.addEventListener('click', function (e) {
+  //       const parent = this.parentElement;
+  //       parent.classList.toggle('dropdown-active');
+  //       e.preventDefault(); // prevent navigation
+  //     });
+  //   });
+  // });
+
   /**
    * Scroll top button
    */

@@ -927,8 +927,8 @@ section,
 }
 
 .background span {
-  width: 10vmin;
-  height: 10vmin;
+  width: 7vmin;
+  height: 7vmin;
   border-radius: 13vmin;
   backface-visibility: hidden;
   position: absolute;
@@ -1497,15 +1497,29 @@ flex-direction: column;
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
+.clients {
+  width: 100%;
+}
+
+.clients .swiper {
+  width: 100%;
+}
+
+.clients .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
 .clients .swiper-slide img {
-  /* opacity: 0.5; */
-  transition: 0.3s;
-  /* filter: grayscale(100); */
-  width: 300px !important;
+  width: 600px !important;
+  max-width: none !important; /* Prevent bootstrap or img-fluid override */
+  height: auto;
+  display: block;
 }
 
 .clients .swiper-slide .img-fluid{
-  width: 100% !important;
+  width: 130px !important;
 }
 
 .clients .swiper-slide img:hover {
@@ -1514,7 +1528,7 @@ flex-direction: column;
 }
 
 .clients .swiper-wrapper {
-  height: auto;
+  /* height: auto; */
 }
 
 .clients .swiper-pagination {
@@ -1620,7 +1634,7 @@ flex-direction: column;
 
     .icon-wrapper i {
        font-size: 24px;
-  color: #FDD617; /* red jaise icon dikh rahe hain */
+  color: #fff; /* red jaise icon dikh rahe hain */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2867,9 +2881,9 @@ p.awesome_line {
 # Contact Section
 --------------------------------------------------------------*/
 .contact .info-item {
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 24px 0 30px 0;
+  padding: 24px 20px 30px 20px;
 }
 
 .contact .info-item i {
@@ -2902,7 +2916,7 @@ p.awesome_line {
 }
 
 .contact .php-email-form {
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   height: 100%;
   padding: 30px;
@@ -2922,7 +2936,7 @@ p.awesome_line {
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: var(--surface-color);
+  /* background-color: var(--surface-color); */
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 

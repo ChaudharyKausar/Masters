@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Brand Masterss</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- <link rel="icon" type="image/png" href="assets/img/logo/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon/favicon.svg" />
+  <link rel="shortcut icon" href="assets/img/logo/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/favicon/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest" /> -->
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Presento
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <style>
+        /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+        .service-hero-section-text h2 {
+            margin: 0;
+            font-size: 44px;
+            font-weight: 700;
+            color: #fff !important;
+        }
+
+        .service-hero-section-text p {
+            color: #fff;
+            margin: 10px 0 0 0;
+            font-size: 20px !important;
+        }
+
+        /*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+        .about h3 {
+            font-weight: 700;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about .fst-italic {
+            color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
+        }
+
+        .about .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .about .content ul li {
+            padding: 0 0 10px 30px;
+            position: relative;
+        }
+
+        .about .content ul i {
+            position: absolute;
+            font-size: 20px;
+            left: 0;
+            top: -3px;
+            color: var(--accent-color);
+        }
+
+        .about .content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .about .pulsating-play-btn {
+            position: absolute;
+            left: calc(50% - 47px);
+            top: calc(50% - 47px);
+        }
+
+        /*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+        .services .service-item {
+            background-color: var(--surface-color);
+            padding: 40px;
+            box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .services .service-item .icon {
+            width: 48px;
+            height: 48px;
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .services .service-item .icon i {
+            color: color-mix(in srgb, var(--heading-color), transparent 30%);
+            font-size: 56px;
+            transition: ease-in-out 0.3s;
+            z-index: 2;
+            position: relative;
+        }
+
+        .services .service-item .icon:before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: color-mix(in srgb, var(--heading-color), transparent 95%);
+            border-radius: 50px;
+            z-index: 1;
+            top: 10px;
+            right: -20px;
+            transition: 0.3s;
+        }
+
+        .services .service-item h3 {
+            color: color-mix(in srgb, var(--heading-color), transparent 20%);
+            font-weight: 700;
+            margin: 0 0 20px 0;
+            padding-bottom: 8px;
+            font-size: 22px;
+            position: relative;
+            display: inline-block;
+            border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
+            transition: 0.3s;
+        }
+
+        .services .service-item p {
+            line-height: 24px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+        .services .service-item .readmore {
+            margin-top: 15px;
+            display: inline-block;
+            color: color-mix(in srgb, var(--default-color), transparent 30%);
+        }
+
+        .services .service-item:hover .icon i {
+            color: var(--heading-color);
+        }
+
+        .services .service-item:hover .icon:before {
+            background: color-mix(in srgb, var(--accent-color), transparent 50%);
+        }
+
+        .services .service-item:hover h3 {
+            border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
+            color: var(--heading-color);
+        }
+
+        .services .service-item:hover .readmore {
+            color: var(--accent-color);
+        }
+
+        /*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+        .pricing {
+            padding: 60px 0 120px 0;
+        }
+
+        .pricing .section-title {
+            margin-bottom: 40px;
+        }
+
+        .pricing .pricing-item {
+            background-color: var(--surface-color);
+            box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
+            padding: 60px 40px;
+            height: 100%;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        .pricing h3 {
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .pricing .icon {
+            margin: 30px auto 20px auto;
+            width: 70px;
+            height: 70px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+            transform-style: preserve-3d;
+        }
+
+        .pricing .icon i {
+            color: var(--background-color);
+            font-size: 28px;
+            transition: ease-in-out 0.3s;
+            line-height: 0;
+        }
+
+        .pricing .icon::before {
+            position: absolute;
+            content: "";
+            height: 86px;
+            width: 86px;
+            border-radius: 50%;
+            background: color-mix(in srgb, var(--accent-color), transparent 80%);
+            transition: all 0.3s ease-out 0s;
+            transform: translateZ(-1px);
+        }
+
+        .pricing .icon::after {
+            position: absolute;
+            content: "";
+            height: 102px;
+            width: 102px;
+            border-radius: 50%;
+            background: color-mix(in srgb, var(--accent-color), transparent 90%);
+            transition: all 0.3s ease-out 0s;
+            transform: translateZ(-2px);
+        }
+
+        .pricing h4 {
+            font-size: 48px;
+            color: var(--accent-color);
+            font-weight: 700;
+            font-family: var(--heading-font);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .pricing h4 sup {
+            font-size: 28px;
+        }
+
+        .pricing h4 span {
+            color: color-mix(in srgb, var(--default-color), transparent 50%);
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .pricing ul {
+            padding: 20px 0;
+            list-style: none;
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            text-align: left;
+            line-height: 20px;
+        }
+
+        .pricing ul li {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .pricing ul i {
+            color: #059652;
+            font-size: 24px;
+            padding-right: 3px;
+        }
+
+        .pricing ul .na {
+            color: color-mix(in srgb, var(--default-color), transparent 70%);
+        }
+
+        .pricing ul .na i {
+            color: color-mix(in srgb, var(--default-color), transparent 70%);
+        }
+
+        .pricing ul .na span {
+            text-decoration: line-through;
+        }
+
+        .pricing .buy-btn {
+            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            display: inline-block;
+            padding: 8px 40px 10px 40px;
+            border-radius: 50px;
+            border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
+            transition: none;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: var(--heading-font);
+            transition: 0.3s;
+        }
+
+        .pricing .buy-btn:hover {
+            background-color: var(--accent-color);
+            color: var(--contrast-color);
+        }
+
+        .pricing .featured {
+            z-index: 10;
+            border: 3px solid var(--accent-color);
+        }
+
+        @media (min-width: 992px) {
+            .pricing .featured {
+                transform: scale(1.15);
+            }
+        }
+
+
+        .usp .img-wrapper img {
+            width: 90%;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+
+<body class="index-page">
+
+    <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <!-- <h1 class="sitename">Presento</h1> -->
+        <img src="assets/img/logo/logo_3.jpeg" alt="">
+        <!-- <span>.</span> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home<br></a></li>
+          <li><a href="about.html">About</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <!-- <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li> -->
+          <li class="dropdown"><a><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="Branding.html">Branding</a></li>
+              <li><a href="marketing_consulting.html">Marketing consulting</a></li>
+              <li><a href="content_writing.html">Content Writing </a></li>
+              <li><a href="website.html">Website Development</a></li>
+              <li><a href="digital_strategy.html">Digital Strategy</a></li>
+              <li><a href="performance-marketing.html">Performance Marketing</a></li>
+              <li><a href="graphics design.html">Graphic Design</a></li>
+
+              <li class="dropdown">
+                <a href="Seo.html"><span>SEO Services</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="local_business_seo.html">Local Business Seo</a></li>
+                  <li><a href="on_page_seo.html">On Page Seo</a></li>
+                  <li><a href="off_page_seo.html">Off Page Seo</a></li>
+                  <li><a href="technical_seo.html">Technical Seo</a></li>
+                  <li><a href="competitor_analysis_seo.html">Competitor Analysis Seo</a></li>
+                  <li><a href="small_business_seo.html">Small Business Seo</a></li>
+
+                </ul>
+              </li>
+
+
+              <li><a href="smm.html">SMM Services</a></li>
+            </ul>
+          </li>
+          <li><a href="blog.html">Blog</a></li>
+          <!-- <li><a href="#contact">Contact</a></li> -->
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="contact.html">Contact Us</a>
+
+    </div>
+  </header>
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero section">
+            <!-- <video class="video-background" autoplay muted loop playsinline>
+        <source src="assets/img/Video-bg/video4.mp4" type="video/mp4">
+      </video> -->
+            <img class="video-background" src="assets/img/gallery/Training Background Image.jpg" />
+
+            <div class="container service-hero-section-text">
+                <h2 data-aos="fade-up" data-aos-delay="100">Your Brand. Our Social Media Expertise.
+
+</h2>
+                <p data-aos="fade-up" data-aos-delay="200">At Brand Mastersss, we help businesses dominate social platforms with result-driven Social Media Marketing (SMM) strategies. Whether it’s Facebook, Instagram, LinkedIn, or Twitter – our expert team creates impactful content, runs laser-focused ads, and builds authentic audience engagement that drives conversions and boosts your brand visibility online.</p>
+                <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
+                    <a href="contact.html#contact" class="btn-get-started">Let's Build Your Site</a>
+                </div>
+            </div>
+
+        </section><!-- /Hero Section -->
+
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+
+
+            <div class="container">
+
+                <div class="row gy-4">
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <img src="assets/img/abt1-min.jpg" class="img-fluid rounded-4 mb-4" alt="">
+                        <!-- <p>Unlock your business potential with professional website development services, creating responsive,
+              user-friendly, and visually appealing websites tailored to meet your unique needs.</p>
+            <p>Boost your online presence with our professional website development services. We create responsive,
+              visually appealing, and user-friendly websites tailored to your business goals, ensuring an exceptional
+              digital experience that drives engagement and enhances brand visibility.</p> -->
+                    </div>
+                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+                        <div class="content ps-0 ps-lg-5">
+                            <h3>Best SMM Company and Agency in Mumbai
+                            </h3>
+                            <!-- <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Seamlessly optimized for all devices, ensuring a
+                    consistent user experience across desktop, tablet, and mobile.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Intuitive and engaging website experiences.</span>
+                </li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Tailored websites designed to meet your specific
+                    business goals and objectives.</span></li>
+              </ul> -->
+                            <p>
+                                In the speedy online world, social media marketing (SMM) is the key to brand development
+                                and customer interaction. Brand Mastersss is the top SMM agency and firm in Mumbai
+                                that provides professional techniques to build brand visibility, grow followers, and
+                                generate conversions.</p>
+
+                            <div class="position-relative mt-4">
+                                <!-- <img src="assets/img/abt2-min.webp" class="img-fluid rounded-4" alt=""> -->
+                                <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /About Section -->
+
+
+        <!-- Services Section -->
+
+
+
+        <!-- Our Services -->
+        <div class="feat bg-gray pt-5 pb-5">
+            <div class="container">
+                <div class="my-5">
+                    <div class="row align-items-center section-title justify-content-between" style="text-align: left;">
+                        <div class="col-md-5">
+                            <h2>Our Professional SMM Services Includes</h2>
+                        </div>
+                        <div class="col-md-7">
+                            <p>
+                                At Brand Mastersss, we offer comprehensive Social Media Marketing (SMM) services to
+                                enhance brand visibility, engage audiences, and drive business growth. Our expert team
+                                tailors strategies to maximize your online presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_three"> <i
+                                    class="fa-brands fa-square-facebook"></i>
+                                </i>
+                            </span>
+                            <h6>Facebook Marketing</h6>
+                            <p>Brand Mastersss provides professional Facebook marketing services for enhancing brand
+                                recognition, interaction, and conversions. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_three"><i
+                                    class="fa-brands fa-square-instagram"></i></span>
+                            <h6>Instagram Marketing</h6>
+                            <p>Brand Mastersss is an expert in Instagram marketing, producing compelling content,
+                                targeted advertising, and growth campaigns to boost brand visibility, followers, and
+                                conversions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_three"><i class="fa-brands fa-youtube"></i>
+                            </span>
+                            <h6>YouTube Marketing</h6>
+                            <p>Brand Mastersss provides expert YouTube marketing services, including video
+                                optimization, targeted ads, and audience engagement strategies. </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_one"><i class="fa-brands fa-pinterest"></i>
+                            </span>
+                            <h6>Pinterest Marketing</h6>
+                            <p>Brand Mastersss provides skilled Pinterest marketing, such as content creation, SEO
+                                pins, and targeted campaigns.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_six"><i
+                                    class="fa-brands fa-linkedin"></i></span>
+                            <h6>Linkedin Marketing</h6>
+                            <p>Brand Mastersss is an expert in LinkedIn marketing and assists companies in
+                                establishing professional networks, lead generation, and brand authority enhancement.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="item"> <span class="icon feature_box_col_five"><i class="fa-brands fa-twitter"></i>
+                            </span>
+                            <h6>Twitter Marketing</h6>
+                            <p>Brand Mastersss offers professional Twitter marketing solutions, such as content
+                                development, targeted ads, and engagement planning.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Our Services -->
+
+
+        <!-- Events Section -->
+
+        <section id="events" class="events section">
+            <div class="section-title">
+                <h2>Transform Your Brand with Our SMM Expertise
+                </h2>
+            </div>
+            <div class="container" data-aos="fade-up">
+
+
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/abt1-min.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a>Facebook Marketing</a></h5>
+                                <!-- <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p> -->
+                                <p class="card-text">Brand Mastersss provides professional Facebook marketing
+                                    services for enhancing brand recognition, interaction, and conversions. Our services
+                                    incorporate targeted advertising, content creation, and audience analytics to ensure
+                                    the maximum online expansion of your business
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/abt2-min.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a>Instagram Marketing</a></h5>
+                                <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
+                                <p class="card-text">Brand Mastersss is an expert in Instagram marketing, producing
+                                    compelling content, targeted advertising, and growth campaigns to boost brand
+                                    visibility, followers, and conversions. Our professional strategy maximizes reach
+                                    and audience engagement.
+
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container" data-aos="fade-up">
+
+
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/abt1-min.jpg" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a>Linkedin Marketing</a></h5>
+                                <!-- <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p> -->
+                                <p class="card-text">Brand Mastersss is an expert in LinkedIn marketing and assists companies in establishing professional networks, lead generation, and brand authority enhancement. Our techniques involve targeted advertising, content creation, and audience interaction to accelerate business growth.
+
+</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="assets/img/abt2-min.webp" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"><a>Twitter Marketing</a></h5>
+                                <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
+                                <p class="card-text">Brand Mastersss offers professional Twitter marketing solutions, such as content development, targeted ads, and engagement planning. We assist companies in building their audience, enhancing brand awareness, and generating meaningful interactions for improved conversion.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section><!-- /Events Section -->
+
+
+ </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="logo d-flex align-items-center">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <!-- <span class="sitename">Presento</span> -->
+                            <img src="assets/img/logo/logo.png" alt="">
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>Experience the Best Digital Marketing Agency and Website Design Services! We Provide SEO,
+                                PPC, Social
+                                Media Marketing, and Breathtaking Website Designs to Boost Your Brand, Drive Traffic,
+                                Increase
+                                Engagement, and Maximize Your Online Success with Data-Driven Strategies.</p>
+                        </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="industries.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="Branding.html">Branding</a></li>
+            <li><a href="marketing_consulting.html">Marketing consulting</a></li>
+            <li><a href="content_writing.html">Content Writing</a></li>
+            <li><a href="website.html">Website Development</a></li>
+            <li><a href="digital_strategy.html">Digital Strategy</a></li>
+            <li><a href="performance-marketing.html">Performance Marketing</a></li>
+            <li><a href="graphics design.html">Graphic Design</a></li>
+            <li><a href="Seo.html">SEO Services</a></li>
+            <li><a href="smm.html">SMM Services</a></li>
+
+          </ul>
+        </div>
+
+                <div class="col-lg-4 col-md-12 footer-newsletter">
+                    <h4>Contact Us</h4>
+                    <div class="footer-contact">
+                        <a href="tel:8879984172" id="infolink">
+                            <p class="mt-3" style="color: #fff;"><strong>Phone:</strong> <span>+91 8879984172</span></p>
+                        </a>
+                        <a href="mailto:info@mastersenterprises.digital" id="infolink">
+                            <p style="color: #fff;"><strong>Email:</strong> <span>info@mastersenterprises.digital</span>
+                            </p>
+                        </a>
+                    </div>
+                    <div class="social-links d-flex mt-4">
+                        <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
+                        <a href="https://www.facebook.com/Mastersenterprises2025?sfnsn=wa" target="_blank"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/masters_enterprise2025/?igsh=MWFjbXU5M3RleWU5Zg%3D%3D#"
+                            target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                            target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+            <p>Copyright © 2025 | Developed by <a href="https://mastersenterprises.digital/" target="_blank">
+                    Brand Mastersss.</a></p>
+        </div>
+
+    </footer>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
