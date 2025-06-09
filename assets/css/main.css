@@ -255,7 +255,7 @@ h6 {
 
 .header .logo img {
   /* max-height: 45px; */
-  height: 50px;
+  height: 58px;
   margin-right: 8px;
 }
 
@@ -552,7 +552,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: ffffff;
-  background-color: var(--background-color);
+  background-color: #000000;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
