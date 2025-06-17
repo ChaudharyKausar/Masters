@@ -547,6 +547,11 @@ h6 {
   }
 }
 
+/* @media (min-width: 1300px) { */
+  .header .logo img{
+    height: 78px;
+  }
+/* } */
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
@@ -575,7 +580,7 @@ h6 {
 }
 
 .footer .logo img {
-  width: 210px;
+  width: 230px;
 }
 
 .footer .footer-usp .logo span {
@@ -1532,7 +1537,7 @@ section,
 }
 
 .clients .swiper-slide .img-fluid {
-  width: 130px !important;
+  width: 170px !important;
 }
 
 .clients .swiper-slide img:hover {
