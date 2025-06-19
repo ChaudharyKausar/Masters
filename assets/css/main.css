@@ -547,6 +547,16 @@ h6 {
   }
 }
 
+.navmenu ul ul {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.navmenu ul ul.dropdown-active {
+  display: block;
+}
+
+
 /* @media (min-width: 1300px) { */
   .header .logo img{
     height: 78px;
