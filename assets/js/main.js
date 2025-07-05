@@ -5,6 +5,83 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+// js for cursor
+document.addEventListener("DOMContentLoaded", () => {
+  function initCustomCursor() {
+    const cursor = document.getElementById("customCursor");
+    let mouseX = 0,
+      mouseY = 0;
+    let posX = 0,
+      posY = 0;
+    const speed = 0.15;
+
+    // Track mouse movement
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      posX += (mouseX - posX) * speed;
+      posY += (mouseY - posY) * speed;
+      cursor.style.left = `${posX}px`;
+      cursor.style.top = `${posY}px`;
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Hover effects
+    document.querySelectorAll("[data-cursor-text]").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        const text = el.getAttribute("data-cursor-text") || "";
+        const bg =
+          el.getAttribute("data-cursor-bg") ||
+          getComputedStyle(document.documentElement).getPropertyValue(
+            "--cursor-bg"
+          );
+        const color =
+          el.getAttribute("data-cursor-text-color") ||
+          getComputedStyle(document.documentElement).getPropertyValue(
+            "--cursor-text-color"
+          );
+
+        cursor.textContent = text;
+        cursor.style.width = "60px";
+        cursor.style.height = "60px";
+        cursor.style.backgroundColor = bg;
+        cursor.style.color = color;
+        cursor.style.fontSize = "12px";
+        cursor.style.display = "flex";
+        cursor.style.alignItems = "center";
+        cursor.style.justifyContent = "center";
+        cursor.style.transform = "translate(-50%, -50%) scale(1.2)";
+      });
+
+      el.addEventListener("mouseleave", () => {
+        cursor.textContent = "";
+        cursor.style.width = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--cursor-size");
+        cursor.style.height = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--cursor-size");
+        cursor.style.backgroundColor = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--cursor-bg");
+        cursor.style.color = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--cursor-text-color");
+        cursor.style.fontSize = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--cursor-font-size");
+        cursor.style.transform = "translate(-50%, -50%) scale(1)";
+        cursor.style.display = "block";
+      });
+    });
+  }
+
+  initCustomCursor();
+});
 
 (function() {
   "use strict";
@@ -306,6 +383,12 @@ particlesJS('particle-container', {
         waitBetweenWords: 500,
     });
     exampleTyping.start()
+
+
+
+
+
+
 
 
 

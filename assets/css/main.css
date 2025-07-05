@@ -74,6 +74,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  /* cursor: none; */
 }
 
 a {
@@ -236,6 +237,82 @@ h6 {
     transform: scale(1, 1);
     opacity: 0;
   }
+}
+
+
+
+/* -------------------------------------------------------------
+cursor
+------------------------------------------------------------- */
+/* body .cursor {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.cursor__ball {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.cursor__ball circle {
+  fill: #1da1f3;
+  opacity: 0.8;
+}
+
+body .left,
+body .right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .right {
+  background: #fff;
+}
+
+body .right a {
+  border-bottom: 2px solid #fff;
+}
+
+body .right h1,
+body .right p,
+body .right a {
+  color: #fff;
+} */
+
+
+
+/* or */
+#customCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  /* background: radial-gradient(circle at top left, #E03A3C, #e73042cb); */
+  background-color: #ffffff9a;
+  border: 2px solid #E03A3C;
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 9999;
+  transition: background-color 0.3s, color 0.3s, font-size 0.3s, width 0.3s,
+    height 0.3s, transform 0.15s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.075);
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -558,9 +635,10 @@ h6 {
 
 
 /* @media (min-width: 1300px) { */
-  .header .logo img{
-    height: 78px;
-  }
+.header .logo img {
+  height: 78px;
+}
+
 /* } */
 /*--------------------------------------------------------------
 # Global Footer
@@ -2318,18 +2396,19 @@ p.awesome_line {
   /* border: 5px solid rgba(0, 0, 0, 0.07); */
   margin-bottom: 30px;
   -webkit-transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0;
+  /* transition: all 0.5s ease 0, transform 0.8s; */
   transition: all 0.5s ease 0s;
   height: 100%;
 }
 
+
 .feat .item:hover {
+  transform: scale(1.04);
   background: #E03A3C;
-  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0;
-  transition: all 0.5s ease 0s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+
 
 .feat .item:hover .feat .item,
 .feat .item:hover span.icon {
@@ -2471,6 +2550,59 @@ p.awesome_line {
   background: rgba(0, 0, 0, 0.9);
   padding: 3px 7px;
   border-radius: 30px;
+}
+
+
+
+/* Hover effect on cards */
+.feat .item.feature_box_col_one:hover i {
+  color: #FFE08E; /* Yellow */
+}
+.feat .item.feature_box_col_one:hover {
+  background: #FDC763;
+}
+
+/* Marketing Consulting Hover */
+.feat .item.feature_box_col_two:hover i {
+  color: #5FC6EE; /* Yellow */
+}
+.feat .item.feature_box_col_two:hover {
+  background: #5FC6EE;
+}
+
+/* Branding Hover */
+.feat .item.feature_box_col_three:hover i {
+  color: #E72944; /* Green */
+}
+.feat .item.feature_box_col_three:hover {
+  background: #E72944;
+}
+
+/* SMM Hover */
+.feat .item:hover .feature_box_col_four,
+.feat .item:hover.feature_box_col_four {
+  background: #006CFF; /* Blue */
+}
+.feat .item.feature_box_col_four:hover {
+  background: #006CFF;
+}
+
+/* Performance Marketing Hover */
+.feat .item:hover .feature_box_col_five,
+.feat .item:hover.feature_box_col_five {
+  background: #9227FF; /* Purple */
+}
+.feat .item.feature_box_col_five:hover {
+  background: #9227FF;
+}
+
+/* Digital Strategy Hover */
+.feat .item:hover .feature_box_col_six,
+.feat .item:hover.feature_box_col_six {
+  background: #1727F6; /* Dark Blue */
+}
+.feat .item.feature_box_col_six:hover {
+  background: #1727F6;
 }
 
 /*--------------------------------------------------------------
