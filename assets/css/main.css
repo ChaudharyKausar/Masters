@@ -1394,12 +1394,15 @@ section,
 .hero-section-text .section-2 .box-1 .title {
   background-color: var(--contrast-color);
   color: var(--background-color);
-  padding: 4px 16px 4px;
-  width: max-content;
+  padding: 10px 16px 10px;
+  /* width: max-content; */
   border-radius: 20px;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.4px;
+}
+.hero-section-text .section-2 .box-1 p{
+    margin-top: 20px;
 }
 
 .hero-section-text .section-2 p {
