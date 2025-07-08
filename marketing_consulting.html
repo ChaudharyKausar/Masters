@@ -7,11 +7,11 @@
     <title>Brand Masterss</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
-  <link rel="icon" type="image/png" href="assets/logo/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/logo/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="assets/logo/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/logo/favicon/site.webmanifest" />
+    <link rel="icon" type="image/png" href="assets/logo/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/logo/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/logo/favicon/site.webmanifest" />
     <!-- <link rel="icon" type="image/png" href="assets/img/logo/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon/favicon.svg" />
   <link rel="shortcut icon" href="assets/img/logo/favicon/favicon.ico" />
@@ -28,6 +28,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Pacifico&display=swap" rel="stylesheet"
+
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -38,17 +42,17 @@
 
 
     <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FKK5SFRJT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FKK5SFRJT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-2FKK5SFRJT');
-</script>
+        gtag('config', 'G-2FKK5SFRJT');
+    </script>
 
     <!-- =======================================================
   * Template Name: Presento
@@ -61,6 +65,67 @@
         /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+        .hero-section {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            /* Height adjust kar sakte ho */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 7rem 0 27rem;
+        }
+
+        .hero-section .overlay {
+            /* text-align: center; */
+            color: var(--background-color);
+            /* Text color */
+            /* background: rgba(0,0,0,0.4);  */
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .hero-section h1 {
+            font-size: 56px;
+            margin: 0;
+            font-weight: 800;
+            font-weight: 500;
+            font-family: "Bungee", sans-serif;
+        }
+
+        .hero-section p {
+            font-size: 22px;
+            margin: 10px 0 0;
+            color: var(--heading-color);
+            font-weight: 500;
+            font-family: "Bungee", sans-serif;
+        }
+
+
+        @media screen and (max-width:900px) {
+            .hero-section {
+                padding: 0 2rem 0 12rem;
+            }
+        }
+
+        @media screen and (max-width:670px) {
+            .hero-section h1 {
+                font-size: 32px;
+            }
+
+            .hero-section p {
+                font-size: 15px;
+                margin-top: 10px;
+            }
+
+            .hero-section {
+                padding: 0 2rem 0 2rem;
+                background-position: left;
+            }
+        }
+
         .service-hero-section-text h2 {
             margin: 0;
             font-size: 44px;
@@ -356,81 +421,89 @@
     <div id="customCursor"></div>
 
     <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <!-- <h1 class="sitename">Presento</h1> -->
-        <img src="assets/img/logo/BRAND MASTER WHITE BACKGROUND.png" alt="">
-        <!-- <span>.</span> -->
-      </a>
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+                <!-- <h1 class="sitename">Presento</h1> -->
+                <img src="assets/img/logo/BRAND MASTER WHITE BACKGROUND.png" alt="">
+                <!-- <span>.</span> -->
+            </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
-          <!-- <li><a href="#services">Services</a></li> -->
-          <!-- <li><a href="#portfolio">Portfolio</a></li>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html" class="active">Home<br></a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <!-- <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="contact.html">Contact</a></li> -->
-          <li class="dropdown"><a><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="Branding.html">Branding</a></li>
-              <li><a href="marketing_consulting.html">Marketing consulting</a></li>
-              <li><a href="content_writing.html">Content Writing </a></li>
-              <li><a href="website.html">Website Development</a></li>
-              <li><a href="digital_strategy.html">Digital Strategy</a></li>
-              <li><a href="performance-marketing.html">Performance Marketing</a></li>
-              <li><a href="graphics design.html">Graphic Design</a></li>
+                    <li class="dropdown"><a><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="Branding.html">Branding</a></li>
+                            <li><a href="marketing_consulting.html">Marketing consulting</a></li>
+                            <li><a href="content_writing.html">Content Writing </a></li>
+                            <li><a href="website.html">Website Development</a></li>
+                            <li><a href="digital_strategy.html">Digital Strategy</a></li>
+                            <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                            <li><a href="graphics design.html">Graphic Design</a></li>
 
-              <li class="dropdown">
-                <a href="Seo.html"><span>SEO Services</span> <i class="bi bi-chevron-right toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="local_business_seo.html">Local Business Seo</a></li>
-                  <li><a href="on_page_seo.html">On Page Seo</a></li>
-                  <li><a href="off_page_seo.html">Off Page Seo</a></li>
-                  <li><a href="technical_seo.html">Technical Seo</a></li>
-                  <li><a href="competitor_analysis_seo.html">Competitor Analysis Seo</a></li>
-                  <li><a href="small_business_seo.html">Small Business Seo</a></li>
+                            <li class="dropdown">
+                                <a href="Seo.html"><span>SEO Services</span> <i
+                                        class="bi bi-chevron-right toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="local_business_seo.html">Local Business Seo</a></li>
+                                    <li><a href="on_page_seo.html">On Page Seo</a></li>
+                                    <li><a href="off_page_seo.html">Off Page Seo</a></li>
+                                    <li><a href="technical_seo.html">Technical Seo</a></li>
+                                    <li><a href="competitor_analysis_seo.html">Competitor Analysis Seo</a></li>
+                                    <li><a href="small_business_seo.html">Small Business Seo</a></li>
 
+                                </ul>
+                            </li>
+
+
+                            <li><a href="smm.html">SMM Services</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <!-- <li><a href="#contact">Contact</a></li> -->
                 </ul>
-              </li>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
 
+            <a class="btn-getstarted" href="contact.html">Contact Us</a>
 
-              <li><a href="smm.html">SMM Services</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-          <!-- <li><a href="#contact">Contact</a></li> -->
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="contact.html">Contact Us</a>
-
-    </div>
-  </header>
+        </div>
+    </header>
 
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section">
-            <!-- <video class="video-background" autoplay muted loop playsinline>
-        <source src="assets/img/Video-bg/video4.mp4" type="video/mp4">
-      </video> -->
+        <!-- <section id="hero" class="hero section">
             <img class="video-background" src="assets/img/gallery/Training Background Image.jpg" />
 
             <div class="container service-hero-section-text">
                 <h2 data-aos="fade-up" data-aos-delay="100">Data-Driven Marketing. Proven Results.</h2>
-                <p data-aos="fade-up" data-aos-delay="200">From market research to campaign execution — we guide your brand with insights, strategy, and measurable outcomes.
-</p>
+                <p data-aos="fade-up" data-aos-delay="200">From market research to campaign execution — we guide your
+                    brand with insights, strategy, and measurable outcomes.
+                </p>
                 <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
                     <a href="contact.html#contact" class="btn-get-started">Let's Build Your Site</a>
                 </div>
             </div>
 
-        </section><!-- /Hero Section -->
+        </section> -->
+        
+        <section class="hero-section" style="background-image: url('assets/img/Services/consulting.jpeg');">
+            <div class="overlay">
+                <h1>Data-Driven Marketing. Proven Results.</h1>
+                <p>From market research to campaign execution — we guide your
+                    brand with insights, strategy, and measurable outcomes.</p>
+            </div>
+        </section>
+        <!-- /Hero Section -->
 
 
         <!-- About Section -->
@@ -446,8 +519,13 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
                         <div class="content ps-0 ps-lg-5">
                             <h3>Top Marketing Consulting Services in Mumbai, India</h3>
-                            <p>In today’s competitive market, success isn't accidental — it’s strategic. Marketing consulting helps businesses identify the right direction, streamline efforts, and maximize results across digital channels.</p>
-                            <p>At Brand Masterss, we offer expert Marketing Consulting Services in Mumbai, India, guiding brands with tailored strategies in SEO, social media, content, and paid marketing. We help you drive growth, enhance visibility, and convert ideas into impact.</p>
+                            <p>In today’s competitive market, success isn't accidental — it’s strategic. Marketing
+                                consulting helps businesses identify the right direction, streamline efforts, and
+                                maximize results across digital channels.</p>
+                            <p>At Brand Masterss, we offer expert Marketing Consulting Services in Mumbai, India,
+                                guiding brands with tailored strategies in SEO, social media, content, and paid
+                                marketing. We help you drive growth, enhance visibility, and convert ideas into impact.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -465,7 +543,8 @@
                             <h2>BENEFITS OF MARKETING CONSULTING</h2>
                         </div>
                         <div class="col-md-7">
-                            <p>Whether you're launching, scaling, or rebranding — expert marketing consulting saves time, boosts ROI, and puts your business on the right track.</p>
+                            <p>Whether you're launching, scaling, or rebranding — expert marketing consulting saves
+                                time, boosts ROI, and puts your business on the right track.</p>
                         </div>
                     </div>
                 </div>
@@ -475,7 +554,8 @@
                         <div class="item"> <span class="icon feature_box_col_three"><i class="bi bi-geo-alt-fill"></i>
                             </span>
                             <h6>Clarity & Strategic Direction</h6>
-                            <p>We align your marketing goals with clear, actionable plans tailored to your industry and audience.</p>
+                            <p>We align your marketing goals with clear, actionable plans tailored to your industry and
+                                audience.</p>
                         </div>
                     </div>
 
@@ -483,7 +563,8 @@
                         <div class="item"> <span class="icon feature_box_col_three"><i
                                     class="fas fa-bullseye"></i></span>
                             <h6>Improves Campaign Performance</h6>
-                            <p>We fine-tune your digital efforts — including SEO, PPC, social media, and content — for better reach, engagement, and results.</p>
+                            <p>We fine-tune your digital efforts — including SEO, PPC, social media, and content — for
+                                better reach, engagement, and results.</p>
                         </div>
                     </div>
 
@@ -491,7 +572,8 @@
                         <div class="item"> <span class="icon feature_box_col_three"><i
                                     class="bi bi-cash-coin"></i></span>
                             <h6>Expert Insights & Growth Tactics</h6>
-                            <p>With market research, competitor analysis, and audience profiling, we offer insight-driven recommendations that lead to business expansion.</p>
+                            <p>With market research, competitor analysis, and audience profiling, we offer
+                                insight-driven recommendations that lead to business expansion.</p>
                         </div>
                     </div>
 
@@ -523,7 +605,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><a>Discovery & Business Analysis</a></h5>
                                 <!-- <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p> -->
-                                <p class="card-text">We begin with deep market and brand research to identify opportunities, gaps, and the best marketing approach for your goals.</p>
+                                <p class="card-text">We begin with deep market and brand research to identify
+                                    opportunities, gaps, and the best marketing approach for your goals.</p>
                             </div>
                         </div>
                     </div>
@@ -535,7 +618,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><a>Strategy Development</a></h5>
                                 <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">Based on research, we craft a customized roadmap covering branding, SEO, advertising, content, and social strategy.</p>
+                                <p class="card-text">Based on research, we craft a customized roadmap covering branding,
+                                    SEO, advertising, content, and social strategy.</p>
                             </div>
                         </div>
 
@@ -549,7 +633,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><a>Execution Planning & Tooling</a></h5>
                                 <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">We recommend the right channels, platforms, and tools — with a focus on ROI, customer journey optimization, and digital alignment.</p>
+                                <p class="card-text">We recommend the right channels, platforms, and tools — with a
+                                    focus on ROI, customer journey optimization, and digital alignment.</p>
                             </div>
                         </div>
 
@@ -563,7 +648,8 @@
                             <div class="card-body">
                                 <h5 class="card-title"><a>Performance Monitoring & Guidance</a></h5>
                                 <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">We don’t stop at strategy. We help track, analyze, and refine campaigns — ensuring ongoing improvements and sustainable growth.</p>
+                                <p class="card-text">We don’t stop at strategy. We help track, analyze, and refine
+                                    campaigns — ensuring ongoing improvements and sustainable growth.</p>
                             </div>
                         </div>
 
@@ -588,7 +674,10 @@
                             <img src="assets/img/logo/BRAND MASTER BLACK BACKGROUND.png" alt="">
                         </a>
                         <div class="footer-contact pt-3">
-                            <p>We create powerful brand identities, build intelligent marketing approaches, and deliver campaigns that grow your business. From brand positioning and visual narrative to targeted marketing programs, we assist you in establishing awareness, connecting with customers, and driving quantifiable expansion with insight-driven solutions.</p>
+                            <p>We create powerful brand identities, build intelligent marketing approaches, and deliver
+                                campaigns that grow your business. From brand positioning and visual narrative to
+                                targeted marketing programs, we assist you in establishing awareness, connecting with
+                                customers, and driving quantifiable expansion with insight-driven solutions.</p>
                         </div>
                 </div>
 
@@ -603,20 +692,20 @@
                 </div>
 
                 <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Services</h4>
-          <ul>
-            <li><a href="Branding.html">Branding</a></li>
-            <li><a href="marketing_consulting.html">Marketing consulting</a></li>
-            <li><a href="content_writing.html">Content Writing</a></li>
-            <li><a href="website.html">Website Development</a></li>
-            <li><a href="digital_strategy.html">Digital Strategy</a></li>
-            <li><a href="performance-marketing.html">Performance Marketing</a></li>
-            <li><a href="graphics design.html">Graphic Design</a></li>
-            <li><a href="Seo.html">SEO Services</a></li>
-            <li><a href="smm.html">SMM Services</a></li>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Branding.html">Branding</a></li>
+                        <li><a href="marketing_consulting.html">Marketing consulting</a></li>
+                        <li><a href="content_writing.html">Content Writing</a></li>
+                        <li><a href="website.html">Website Development</a></li>
+                        <li><a href="digital_strategy.html">Digital Strategy</a></li>
+                        <li><a href="performance-marketing.html">Performance Marketing</a></li>
+                        <li><a href="graphics design.html">Graphic Design</a></li>
+                        <li><a href="Seo.html">SEO Services</a></li>
+                        <li><a href="smm.html">SMM Services</a></li>
 
-          </ul>
-        </div>
+                    </ul>
+                </div>
 
                 <div class="col-lg-4 col-md-12 footer-newsletter">
                     <h4>Contact Us</h4>
@@ -628,16 +717,17 @@
                             <p style="color: #fff;"><strong>Email:</strong> <span>info@mastersenterprises.digital</span>
                             </p>
                         </a>
-<a id="infolink">
-              <p style="color: #fff;"><strong>Address:</strong> <span>Brand Masterss, Office No. 4, Omkar Apartment Sector 20, Airoli Navi Mumbai</span></p>
-            </a>
+                        <a id="infolink">
+                            <p style="color: #fff;"><strong>Address:</strong> <span>Brand Masterss, Office No. 4, Omkar
+                                    Apartment Sector 20, Airoli Navi Mumbai</span></p>
+                        </a>
                     </div>
                     <div class="social-links d-flex mt-4">
                         <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
                         <a href="https://www.facebook.com/Mastersenterprises2025?sfnsn=wa" target="_blank"><i
                                 class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/brand_masterss/"
-                            target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.instagram.com/brand_masterss/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
                         <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
                             target="_blank"><i class="bi bi-linkedin"></i></a>
                     </div>
