@@ -1507,6 +1507,9 @@ section,
   .hero p {
     font-size: 18px;
   }
+  .hero .hero-section-text .section-1 h2{
+    font-size: 42px !important;
+  }
 }
 
 #particle-container {
