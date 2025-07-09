@@ -41,14 +41,14 @@
   <link href="assets/css/main.css" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2FKK5SFRJT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FKK5SFRJT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-2FKK5SFRJT');
-</script>
+    gtag('config', 'G-2FKK5SFRJT');
+  </script>
 
   <!-- =======================================================
   * Template Name: Presento
@@ -61,19 +61,90 @@
     /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.service-hero-section-text h2 {
-  margin: 0;
-  font-size: 44px;
-  font-weight: 700;
-  color: #fff !important;
-}
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      /* Height adjust kar sakte ho */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 7rem 0 27rem;
+    }
 
-.service-hero-section-text p {
-  color: #fff;
-  margin: 10px 0 0 0;
-  font-size: 20px !important;
-}
-/*--------------------------------------------------------------
+    .hero-section .overlay {
+      /* text-align: center; */
+      color: var(--background-color);
+      /* Text color */
+      /* background: rgba(0,0,0,0.4);  */
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .hero-section h1 {
+      font-size: 56px;
+      margin: 0;
+      font-weight: 800;
+      font-weight: 500;
+      font-family: "Bungee", sans-serif;
+    }
+
+    .hero-section p {
+      font-size: 22px;
+      margin: 10px 0 0;
+      color: var(--heading-color);
+      font-weight: 500;
+      font-family: "Bungee", sans-serif;
+    }
+
+
+    @media screen and (max-width:900px) {
+      .hero-section {
+        padding: 0 2rem 0 12rem;
+      }
+    }
+
+    @media screen and (max-width:670px) {
+      .hero-section h1 {
+        font-size: 32px;
+      }
+
+      .hero-section p {
+        font-size: 15px;
+        margin-top: 10px;
+      }
+
+      .hero-section {
+        padding: 0 2rem 0 2rem;
+        background-position: left;
+      }
+    }
+
+    .service-hero-section-text h2 {
+      margin: 0;
+      font-size: 44px;
+      font-weight: 700;
+      color: #fff !important;
+    }
+
+    .service-hero-section-text p {
+      color: #fff;
+      margin: 10px 0 0 0;
+      font-size: 20px !important;
+    }
+
+    .feat {
+      position: relative;
+      padding-bottom: 20rem;
+      background-image: url('assets/img/Services/Service_background/web\ development.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
     .about h3 {
@@ -343,7 +414,7 @@
     }
 
 
-    .usp .img-wrapper img{
+    .usp .img-wrapper img {
       width: 90%;
       border-radius: 20px;
       margin-bottom: 14px;
@@ -352,9 +423,9 @@
 </head>
 
 <body class="index-page">
-    <div id="customCursor"></div>
+  <div id="customCursor"></div>
 
-   <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
@@ -428,13 +499,13 @@
       </div>
     </section> -->
     <section class="hero-section" style="background-image: url('assets/img/Services/website\ development.jpeg');">
-            <div class="overlay">
-                <h1>Custom Websites That Build Powerful Brands</h1>
-                <p>We design and develop stunning, responsive websites
+      <div class="overlay">
+        <h1>Custom Websites That Build Powerful Brands</h1>
+        <p>We design and develop stunning, responsive websites
           that not only look great — they drive results. Whether you're a startup or a growing business, your online
           presence starts here.</p>
-            </div>
-        </section>
+      </div>
+    </section>
     <!-- /Hero Section -->
 
 
@@ -743,11 +814,12 @@
 
 
 
-<!-- USP Section -->
+    <!-- USP Section -->
     <section id="usp" class="usp section section-bg dark-background">
 
       <div class="container position-relative">
-        <h2 style="font-weight: 700; font-size: 28px; margin-bottom: 20px; color: var(--background-color);">Our Design Services</h2>
+        <h2 style="font-weight: 700; font-size: 28px; margin-bottom: 20px; color: var(--background-color);">Our Design
+          Services</h2>
 
         <div class="row gy-5">
           <div class="col-12 col-md-6 col-lg-3 icon-box position-relative usp-box">
@@ -755,33 +827,37 @@
               <img src="assets/img/Services/Responsive Web Design.avif" alt="">
             </div>
             <h4><a>Responsive Design</a></h4>
-            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we take pride in being recognized as the top website development company in Navi-Mumbai, India.
+            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we
+              take pride in being recognized as the top website development company in Navi-Mumbai, India.
             </p>
           </div><!-- Icon-Box -->
 
           <div class="col-12 col-md-6 col-lg-3 icon-box position-relative usp-box">
             <div class="img-wrapper">
-            <img src="assets/img/Services/UI-UX.avif" alt="">
+              <img src="assets/img/Services/UI-UX.avif" alt="">
             </div>
             <h4><a>UI/UX Design</a></h4>
-            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we take pride in being recognized as the top website development company in Navi-Mumbai, India.
+            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we
+              take pride in being recognized as the top website development company in Navi-Mumbai, India.
             </p>
           </div><!-- Icon-Box -->
 
           <div class="col-12 col-md-6 col-lg-3 icon-box position-relative usp-box">
             <div class="img-wrapper">
-            <img src="assets/img/Services/E-commerce.avif" alt="">
+              <img src="assets/img/Services/E-commerce.avif" alt="">
             </div>
             <h4><a>E-Commerce Design</a></h4>
-            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we take pride in being recognized as the top website development company in Navi-Mumbai, India.</p>
+            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we
+              take pride in being recognized as the top website development company in Navi-Mumbai, India.</p>
           </div><!-- Icon-Box -->
 
           <div class="col-12 col-md-6 col-lg-3 icon-box position-relative usp-box">
             <div class="img-wrapper">
-            <img src="assets/img/Services/Custome Website Design.avif" alt="">
+              <img src="assets/img/Services/Custome Website Design.avif" alt="">
             </div>
             <h4><a>Custom Website Design</a></h4>
-            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we take pride in being recognized as the top website development company in Navi-Mumbai, India.</p>
+            <p>With a team of seasoned professionals and a proven track record of delivering exceptional results, we
+              take pride in being recognized as the top website development company in Navi-Mumbai, India.</p>
           </div><!-- Icon-Box -->
 
         </div>
@@ -807,7 +883,10 @@
               <img src="assets/img/logo/BRAND MASTER BLACK BACKGROUND.png" alt="">
             </a>
             <div class="footer-contact pt-3">
-              <p>We create powerful brand identities, build intelligent marketing approaches, and deliver campaigns that grow your business. From brand positioning and visual narrative to targeted marketing programs, we assist you in establishing awareness, connecting with customers, and driving quantifiable expansion with insight-driven solutions.</p>
+              <p>We create powerful brand identities, build intelligent marketing approaches, and deliver campaigns that
+                grow your business. From brand positioning and visual narrative to targeted marketing programs, we
+                assist you in establishing awareness, connecting with customers, and driving quantifiable expansion with
+                insight-driven solutions.</p>
             </div>
         </div>
 
@@ -821,7 +900,7 @@
           </ul>
         </div>
 
-       <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 footer-links">
           <h4>Services</h4>
           <ul>
             <li><a href="Branding.html">Branding</a></li>
@@ -847,15 +926,15 @@
               <p style="color: #fff;"><strong>Email:</strong> <span>info@mastersenterprises.digital</span></p>
             </a>
             <a id="infolink">
-              <p style="color: #fff;"><strong>Address:</strong> <span>Brand Masterss, Office No. 4, Omkar Apartment Sector 20, Airoli Navi Mumbai</span></p>
+              <p style="color: #fff;"><strong>Address:</strong> <span>Brand Masterss, Office No. 4, Omkar Apartment
+                  Sector 20, Airoli Navi Mumbai</span></p>
             </a>
           </div>
           <div class="social-links d-flex mt-4">
             <!-- <a href=""><i class="bi bi-twitter-x"></i></a> -->
             <a href="https://www.facebook.com/Mastersenterprises2025?sfnsn=wa" target="_blank"><i
                 class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/brand_masterss/"
-                            target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.instagram.com/brand_masterss/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
               target="_blank"><i class="bi bi-linkedin"></i></a>
           </div>
