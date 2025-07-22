@@ -854,6 +854,35 @@ body .right a {
   }
 }
 
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 70px;
+  right: 12px;
+  z-index: 999;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out all;
+}
+
+#whatsapp-button img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  #whatsapp-button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
@@ -986,9 +1015,10 @@ section,
   margin-bottom: 0;
 }
 
-.section-title .sub-title{
+.section-title .sub-title {
   font-size: 40px;
 }
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -1402,8 +1432,9 @@ section,
   font-weight: 600;
   letter-spacing: 0.4px;
 }
-.hero-section-text .section-2 .box-1 p{
-    margin-top: 20px;
+
+.hero-section-text .section-2 .box-1 p {
+  margin-top: 20px;
 }
 
 .hero-section-text .section-2 p {
@@ -1508,7 +1539,8 @@ section,
   .hero p {
     font-size: 18px;
   }
-  .hero .hero-section-text .section-1 h2{
+
+  .hero .hero-section-text .section-1 h2 {
     font-size: 42px !important;
   }
 }
@@ -2566,24 +2598,30 @@ p.awesome_line {
 
 /* Hover effect on cards */
 .feat .item.feature_box_col_one:hover i {
-  color: #FFE08E; /* Yellow */
+  color: #FFE08E;
+  /* Yellow */
 }
+
 .feat .item.feature_box_col_one:hover {
   background: #FDC763;
 }
 
 /* Marketing Consulting Hover */
 .feat .item.feature_box_col_two:hover i {
-  color: #5FC6EE; /* Yellow */
+  color: #5FC6EE;
+  /* Yellow */
 }
+
 .feat .item.feature_box_col_two:hover {
   background: #5FC6EE;
 }
 
 /* Branding Hover */
 .feat .item.feature_box_col_three:hover i {
-  color: #E72944; /* Green */
+  color: #E72944;
+  /* Green */
 }
+
 .feat .item.feature_box_col_three:hover {
   background: #E72944;
 }
@@ -2591,8 +2629,10 @@ p.awesome_line {
 /* SMM Hover */
 .feat .item:hover .feature_box_col_four,
 .feat .item:hover.feature_box_col_four {
-  background: #006CFF; /* Blue */
+  background: #006CFF;
+  /* Blue */
 }
+
 .feat .item.feature_box_col_four:hover {
   background: #006CFF;
 }
@@ -2600,8 +2640,10 @@ p.awesome_line {
 /* Performance Marketing Hover */
 .feat .item:hover .feature_box_col_five,
 .feat .item:hover.feature_box_col_five {
-  background: #9227FF; /* Purple */
+  background: #9227FF;
+  /* Purple */
 }
+
 .feat .item.feature_box_col_five:hover {
   background: #9227FF;
 }
@@ -2609,8 +2651,10 @@ p.awesome_line {
 /* Digital Strategy Hover */
 .feat .item:hover .feature_box_col_six,
 .feat .item:hover.feature_box_col_six {
-  background: #1727F6; /* Dark Blue */
+  background: #1727F6;
+  /* Dark Blue */
 }
+
 .feat .item.feature_box_col_six:hover {
   background: #1727F6;
 }
@@ -3621,13 +3665,15 @@ p.awesome_line {
 .blog-details .meta-bottom .share i {
   padding-left: 5px;
 }
+
 .recent-post.active {
   font-weight: bold;
   color: #007bff;
 }
-  .post-item.active {
-      color: #E72944;
-    }
+
+.post-item.active {
+  color: #E72944;
+}
 
 /*--------------------------------------------------------------
 # Blog Author Section
@@ -4625,7 +4671,8 @@ p {
     padding-left: 5px;
   }
 
-  .section-title h2, .section-title .sub-title{
+  .section-title h2,
+  .section-title .sub-title {
     font-size: 25px;
   }
 }
@@ -4640,15 +4687,19 @@ p {
   0% {
     transform: rotate(0deg);
   }
+
   25% {
     transform: rotate(5deg);
   }
+
   50% {
     transform: rotate(0eg);
   }
+
   75% {
     transform: rotate(-5deg);
   }
+
   100% {
     transform: rotate(0deg);
   }

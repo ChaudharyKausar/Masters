@@ -366,6 +366,20 @@ particlesJS('particle-container', {
 
 
 
+// Whats App JS
+function openWhatsApp() {
+    const phone = "+91 84540 04486"; // ← apna number yahan daal (no +)
+    const message = "Hi! I'm interested in your services.";
+    let url = "";
+
+    if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    } else {
+      url = "https://web.whatsapp.com/send?phone=" + phone + "&text=" + encodeURIComponent(message);
+    }
+
+    window.open(url, "_blank");
+  }
 
 
 
