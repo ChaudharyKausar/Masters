@@ -11,15 +11,6 @@
     <link rel="icon" type="image/svg+xml" href="assets/logo/favicon/favicon.svg" />
     <link rel="shortcut icon" href="assets/logo/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/logo/favicon/site.webmanifest" />
-    <!-- <link rel="icon" type="image/png" href="assets/img/logo/favicon/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="assets/img/logo/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="assets/img/logo/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/logo/favicon/apple-touch-icon.png" />
-  <link rel="manifest" href="assets/img/logo/favicon/site.webmanifest" /> -->
-    <!-- Favicons -->
-    <!-- <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -39,439 +30,26 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-    <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2FKK5SFRJT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-2FKK5SFRJT');
-    </script>
-
-    <!-- =======================================================
-  * Template Name: Presento
-  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-    <style>
-        /*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
-        /* Loader full-screen background */
-        #loader-wrapper {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #ffffff;
-            z-index: 999999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Loader animation (simple spinning circle) */
-        #loader {
-            border: 8px solid #f3f3f3;
-            border-top: 8px solid #3498db;
-            /* Blue */
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 10s linear infinite;
-        }
-
-        /* Animation Keyframes */
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .hero-section {
-            position: relative;
-            width: 100%;
-            height: 500px;
-            /* Height adjust kar sakte ho */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            padding: 4rem;
-
-        }
-
-        .hero-section .overlay {
-            /* text-align: center; */
-            color: var(--background-color);
-            /* Text color */
-            /* background: rgba(0,0,0,0.4);  */
-            padding: 20px;
-            border-radius: 8px;
-            width: 40%;
-        }
-
-        .hero-section h1 {
-            font-size: 56px;
-            margin: 0;
-            font-weight: 800;
-            font-weight: 500;
-            font-family: "Bungee", sans-serif;
-        }
-
-        .hero-section p {
-            font-size: 22px;
-            margin: 10px 0 0;
-            color: var(--heading-color);
-            font-weight: 500;
-            font-family: "Bungee", sans-serif;
-        }
-
-
-        @media screen and (max-width:900px) {
-            .hero-section {
-                padding: 0 2rem 0 12rem;
-            }
-        }
-
-        @media screen and (max-width:670px) {
-            .hero-section h1 {
-                font-size: 32px;
-            }
-
-            .hero-section p {
-                font-size: 15px;
-                margin-top: 10px;
-            }
-
-            .hero-section {
-                padding: 0 2rem 0 2rem;
-                background-position: left;
-            }
-        }
-
-        .service-hero-section-text h2 {
-            margin: 0;
-            font-size: 44px;
-            font-weight: 700;
-            color: #fff !important;
-        }
-
-        .service-hero-section-text p {
-            color: #fff;
-            margin: 10px 0 0 0;
-            font-size: 20px !important;
-        }
-
-        .feat {
-            position: relative;
-            padding-bottom: 20rem;
-            background-attachment: fixed;
-            background-image: url('assets/img/Services/Service_background/Competitor\ analysis\ seo.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        /*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-        .about h3 {
-            font-weight: 700;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-
-        .about .fst-italic {
-            color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
-        }
-
-        .about .content ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .about .content ul li {
-            padding: 0 0 10px 30px;
-            position: relative;
-        }
-
-        .about .content ul i {
-            position: absolute;
-            font-size: 20px;
-            left: 0;
-            top: -3px;
-            color: var(--accent-color);
-        }
-
-        .about .content p:last-child {
-            margin-bottom: 0;
-        }
-
-        .about .pulsating-play-btn {
-            position: absolute;
-            left: calc(50% - 47px);
-            top: calc(50% - 47px);
-        }
-
-        /*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-        .services .service-item {
-            background-color: var(--surface-color);
-            padding: 40px;
-            box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
-            height: 100%;
-        }
-
-        .services .service-item .icon {
-            width: 48px;
-            height: 48px;
-            position: relative;
-            margin-bottom: 50px;
-        }
-
-        .services .service-item .icon i {
-            color: color-mix(in srgb, var(--heading-color), transparent 30%);
-            font-size: 56px;
-            transition: ease-in-out 0.3s;
-            z-index: 2;
-            position: relative;
-        }
-
-        .services .service-item .icon:before {
-            position: absolute;
-            content: "";
-            height: 100%;
-            width: 100%;
-            background: color-mix(in srgb, var(--heading-color), transparent 95%);
-            border-radius: 50px;
-            z-index: 1;
-            top: 10px;
-            right: -20px;
-            transition: 0.3s;
-        }
-
-        .services .service-item h3 {
-            color: color-mix(in srgb, var(--heading-color), transparent 20%);
-            font-weight: 700;
-            margin: 0 0 20px 0;
-            padding-bottom: 8px;
-            font-size: 22px;
-            position: relative;
-            display: inline-block;
-            border-bottom: 4px solid color-mix(in srgb, var(--heading-color), transparent 90%);
-            transition: 0.3s;
-        }
-
-        .services .service-item p {
-            line-height: 24px;
-            font-size: 14px;
-            margin-bottom: 0;
-        }
-
-        .services .service-item .readmore {
-            margin-top: 15px;
-            display: inline-block;
-            color: color-mix(in srgb, var(--default-color), transparent 30%);
-        }
-
-        .services .service-item:hover .icon i {
-            color: var(--heading-color);
-        }
-
-        .services .service-item:hover .icon:before {
-            background: color-mix(in srgb, var(--accent-color), transparent 50%);
-        }
-
-        .services .service-item:hover h3 {
-            border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
-            color: var(--heading-color);
-        }
-
-        .services .service-item:hover .readmore {
-            color: var(--accent-color);
-        }
-
-        /*--------------------------------------------------------------
-# Pricing Section
---------------------------------------------------------------*/
-        .pricing {
-            padding: 60px 0 120px 0;
-        }
-
-        .pricing .section-title {
-            margin-bottom: 40px;
-        }
-
-        .pricing .pricing-item {
-            background-color: var(--surface-color);
-            box-shadow: 0 3px 20px -2px rgba(0, 0, 0, 0.1);
-            padding: 60px 40px;
-            height: 100%;
-            position: relative;
-            border-radius: 15px;
-        }
-
-        .pricing h3 {
-            font-weight: 600;
-            margin-bottom: 15px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-        .pricing .icon {
-            margin: 30px auto 20px auto;
-            width: 70px;
-            height: 70px;
-            background: var(--accent-color);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.3s;
-            transform-style: preserve-3d;
-        }
-
-        .pricing .icon i {
-            color: var(--background-color);
-            font-size: 28px;
-            transition: ease-in-out 0.3s;
-            line-height: 0;
-        }
-
-        .pricing .icon::before {
-            position: absolute;
-            content: "";
-            height: 86px;
-            width: 86px;
-            border-radius: 50%;
-            background: color-mix(in srgb, var(--accent-color), transparent 80%);
-            transition: all 0.3s ease-out 0s;
-            transform: translateZ(-1px);
-        }
-
-        .pricing .icon::after {
-            position: absolute;
-            content: "";
-            height: 102px;
-            width: 102px;
-            border-radius: 50%;
-            background: color-mix(in srgb, var(--accent-color), transparent 90%);
-            transition: all 0.3s ease-out 0s;
-            transform: translateZ(-2px);
-        }
-
-        .pricing h4 {
-            font-size: 48px;
-            color: var(--accent-color);
-            font-weight: 700;
-            font-family: var(--heading-font);
-            margin-bottom: 25px;
-            text-align: center;
-        }
-
-        .pricing h4 sup {
-            font-size: 28px;
-        }
-
-        .pricing h4 span {
-            color: color-mix(in srgb, var(--default-color), transparent 50%);
-            font-size: 18px;
-            font-weight: 400;
-        }
-
-        .pricing ul {
-            padding: 20px 0;
-            list-style: none;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            text-align: left;
-            line-height: 20px;
-        }
-
-        .pricing ul li {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .pricing ul i {
-            color: #059652;
-            font-size: 24px;
-            padding-right: 3px;
-        }
-
-        .pricing ul .na {
-            color: color-mix(in srgb, var(--default-color), transparent 70%);
-        }
-
-        .pricing ul .na i {
-            color: color-mix(in srgb, var(--default-color), transparent 70%);
-        }
-
-        .pricing ul .na span {
-            text-decoration: line-through;
-        }
-
-        .pricing .buy-btn {
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            display: inline-block;
-            padding: 8px 40px 10px 40px;
-            border-radius: 50px;
-            border: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
-            transition: none;
-            font-size: 16px;
-            font-weight: 600;
-            font-family: var(--heading-font);
-            transition: 0.3s;
-        }
-
-        .pricing .buy-btn:hover {
-            background-color: var(--accent-color);
-            color: var(--contrast-color);
-        }
-
-        .pricing .featured {
-            z-index: 10;
-            border: 3px solid var(--accent-color);
-        }
-
-        @media (min-width: 992px) {
-            .pricing .featured {
-                transform: scale(1.15);
-            }
-        }
-
-
-        .usp .img-wrapper img {
-            width: 90%;
-            border-radius: 20px;
-            margin-bottom: 14px;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
 </head>
 
-<body class="index-page">
-    <div id="loader-wrapper">
-        <div id="loader">df</div>
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
 
+    <!-- ***** Custom cursor ***** -->
     <div id="customCursor"></div>
 
+    <!-- ***** Header Area Start ***** -->
     <header id="header" class="header d-flex align-items-center sticky-top">
         <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
@@ -519,7 +97,7 @@
                             <li><a href="smm.html">SMM Services</a></li>
                         </ul>
                     </li>
-                    <li><a href="blog-details.html">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <!-- <li><a href="#contact">Contact</a></li> -->
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -530,197 +108,469 @@
         </div>
     </header>
 
-    <main class="main">
 
-        <!-- Hero Section -->
-        <!-- <section id="hero" class="hero section">
-            <img class="video-background" src="assets/img/gallery/Training Background Image.jpg" />
-
-            <div class="container service-hero-section-text">
-                <h2 data-aos="fade-up" data-aos-delay="100">Beat the Competition — Organically</h2>
-                <p data-aos="fade-up" data-aos-delay="200">Our SEO audits reveal where your competitors are ranking, how, and why — so you can build smarter, faster strategies that outperform them.</p>
-                <div class="d-flex mt-4 hero-btn" data-aos="fade-up" data-aos-delay="300">
-                    <a href="contact.html#contact" class="btn-get-started">Let's Build Your Site</a>
-                </div>
-            </div>
-
-        </section> -->
-
-        <section class="hero-section" style="background-image: url('assets/img/Services/Bg-landing-page.jpg');">
-            <div class="overlay">
-                <h1>Beat the Competition — Organically</h1>
-                <p>Our SEO audits reveal where your competitors are ranking, how, and why — so you can build smarter,
-                    faster strategies that outperform them.</p>
-            </div>
-        </section>
-        <!-- /Hero Section -->
-
-
-        <!-- About Section -->
-        <section id="about" class="about section">
-
-
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+        <div class="header-text">
             <div class="container">
-
-                <div class="row gy-4">
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <img src="assets/img/Services/Competitor Analysis.jpg" class="img-fluid rounded-4 mb-4" alt="">
-                    </div>
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
-                        <div class="content ps-0 ps-lg-5">
-                            <h3>Competitor Analysis – SEO Agencies in Navi Mumbai</h3>
-                            <p>
-                                It is essential to know the strategies of your competitors in order to rank higher than
-                                them in search. Brand Mastersss Digital Company provides the finest Competitor
-                                Analysis SEO services in Mumbai, India, and aids businesses in standing tall in the
-                                digital world.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </section><!-- /About Section -->
-
-
-        <!-- Services Section -->
-
-
-
-        <!-- Our Services -->
-        <div class="feat bg-gray pt-5 pb-5">
-            <div class="container">
-                <div class="my-5">
-                    <div class="row align-items-center section-title justify-content-between" style="text-align: left;">
-                        <div class="col-md-5">
-                            <h2>Benefits of small business Seo</h2>
-                        </div>
-                        <div class="col-md-7">
-                            <p>
-                                Competitor Analysis SEO ,SEO is necessary to win in the digital race by understanding
-                                and surpassing your competitors. It identifies winning strategies, gaps, and
-                                opportunities for higher rankings and visibility.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="item"> <span class="icon feature_box_col_three"><i
-                                    class="bi bi-people-fill"></i></span>
-                            <h6>Identify Top Competitors</h6>
-                            <p>Understand who is ranking for your target keywords.</p>
-                        </div>
+                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
+                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                        <h1>We Don’t Just Market Brands — We Make Them Icons.</h1>
+                        <p>Brand Masterss is your 360° brand marketing agency — crafting unforgettable digital
+                            identities that connect, convert, and conquer.</p>
+                        <a href="#about" class="main-button-slider">Explore Our Services</a>
                     </div>
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="item"> <span class="icon feature_box_col_three"><i class="fas fa-key"></i></span>
-                            <h6>Discover Profitable Keywords</h6>
-                            <p>Find high-ranking keywords that drive traffic.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="item"> <span class="icon feature_box_col_three"><i
-                                    class="bi bi-journal-richtext"></i></span>
-                            <h6>Enhance Content Strategy</h6>
-                            <p>Learn what type of content performs best in your industry.</p>
-                        </div>
-                    </div>
-
                 </div>
+            </div>
+        </div>
+    </div>
 
-
+    <section class="section about" id="promotion">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-6" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/img/Services/Regular SEO Audits.avif" class="img-fluid rounded-4 mb-4" alt="">
+                </div>
+                <div class="col-lg-6" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="content ps-0 ps-lg-5">
+                        <h3>About Us – Who We Are</h3>
+                        <p>
+                            At Brand Masterss, we’re a full-service brand marketing agency based in India, helping
+                            individuals and companies build a strong digital presence. From social media growth to
+                            professional websites and visual branding — we offer complete solutions to help you stand
+                            out and scale fast.</p>
+                        <p>With 10+ years of experience and 150+ brands served, we don’t just market — we craft brands
+                            that influence, inspire, and convert.</p>
+                    </div>
+                </div>
             </div>
 
         </div>
-        <!-- Our Services -->
 
-
-        <!-- Events Section -->
-
-        <section id="events" class="events section">
-            <div class="section-title">
-                <h2>Competitor analysis Seo Services</h2>
+    </section>
+    <!-- ***** Features Big Item Start ***** -->
+    <!-- <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>01</h2>
+                            <img src="assets/images/features-icon-1.png" alt="">
+                            <h4>Trend Analysis</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>02</h2>
+                            <img src="assets/images/features-icon-2.png" alt="">
+                            <h4>Site Optimization</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                Discover More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <h2>03</h2>
+                            <img src="assets/images/features-icon-3.png" alt="">
+                            <h4>Email Design</h4>
+                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                            <a href="#testimonials" class="main-button">
+                                More Detail
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="container" data-aos="fade-up">
-
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="assets/img/Services/Competitor Identification.avif" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a>Competitor Identification</a></h5>
-                                <!-- <p class="fst-italic text-center">Sunday, September 26th at 7:00 pm</p> -->
-                                <p class="card-text">Competitor Identification is the initial move toward successful SEO
-                                    strategy. Brand Mastersss Digital Company identifies your market and determines
-                                    the best competitors, discovers their techniques, and assists you in acquiring a
-                                    competitive advantage.</p>
-                            </div>
-                        </div>
+        </div>
+    </section> -->
+    <div class="feat bg-gray pt-5 pb-5">
+        <div class="container">
+            <div class="my-5">
+                <div class="row align-items-center section-title justify-content-between" style="text-align: left;"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="col-md-5">
+                        <h2>Free Resources to Boost Your Brand</h2>
                     </div>
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="assets/img/Services/Keyword Gap Analysis.avif" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a>Keyword Gap Analysis</a></h5>
-                                <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">Keyword Gap Analysis determines opportunities missed through
-                                    comparing your website with your competitors' keywords. Through Brand Mastersss
-                                    Digital Company, we identify the keywords your competitors are ranking for but you
-                                    are not, and thus enable you to optimize your SEO.</p>
-                            </div>
-                        </div>
-
+                    <div class="col-md-7">
+                        <p>
+                            Download our expert-created guides, checklists, and tools — designed to help you grow
+                            faster, smarter, and stronger online.
+                        </p>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="assets/img/Services/Backlink Analysis.avif" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a>Backlink Analysis</a></h5>
-                                <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">Backlink Analysis is fundamental in realizing your website's
-                                    authority and optimizing your SEO plan. At Brand Mastersss Digital Company, we
-                                    review your backlink profile and match it against competitors to assist you in
-                                    constructing high-quality links that increase ranks.</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-md-6 d-flex align-items-stretch">
-                        <div class="card">
-                            <div class="card-img">
-                                <img src="assets/img/Services/Content Performance Review.avif" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title"><a>Content Performance Review</a></h5>
-                                <!-- <p class="fst-italic text-center">Sunday, November 15th at 7:00 pm</p> -->
-                                <p class="card-text">A Content Performance Review assists in evaluating how effectively
-                                    your content is ranking, engaging people, and converting. At Brand Mastersss
-                                    Digital Company, we evaluate your content's strengths and weaknesses to improve for
-                                    enhanced SEO, engagement, and traffic.</p>
-                            </div>
-                        </div>
-
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-people-fill"></i></span>
+                        <h6>Website Audit Checklist</h6>
+                        <p>It’s a detailed guide to review your website’s design,
+                            SEO, speed, and user experience for better performance.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Free-Website-Audit.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
                     </div>
                 </div>
 
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="fas fa-key"></i></span>
+                        <h6>Digital Marketing Checklist</h6>
+                        <p>It’s a quick guide to help plan, run, and track your
+                            online marketing with the right tools and strategies.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Digital Marketing checklist.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-journal-richtext"></i></span>
+                        <h6>SEO Health Checkup Template</h6>
+                        <p>It’s a simple tool to spot and fix SEO issues
+                            related to speed, content, backlinks, and rankings.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Seo Health Checkup.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-people-fill"></i></span>
+                        <h6>Competitor Analysis Report</h6>
+                        <p>It shows how your rivals perform online—so you can spot gaps, improve strategy, and win more
+                            market share.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Competitor Analysis Report.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="fas fa-key"></i></span>
+                        <h6>Make Your Business a Memorable Brand </h6>
+                        <p>A 4-step guide to build identity, craft your story, and show up consistently to stay
+                            unforgettable.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/DMemorable Brand.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-journal-richtext"></i></span>
+                        <h6>Instagram Branding Tips Guide</h6>
+                        <p>A simple guide to boost your local brand using smart content, visuals, and reach tactics on
+                            Instagram.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Instgram Branding.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-people-fill"></i></span>
+                        <h6>Personal Branding Guide</h6>
+                        <p>It helps you build trust by showing the real person behind the brand—because people connect
+                            with people.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Personal Branding.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="fas fa-key"></i></span>
+                        <h6>Branding Mistakes Guide</h6>
+                        <p>Learn 7 common branding errors small businesses make—so you can avoid them and build a
+                            strong, clear brand</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/7 Error in Branding.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-journal-richtext"></i></span>
+                        <h6>Logo Power Guide</h6>
+                        <p>Discover how a well-designed logo boosts trust, brand recall, and even helps you charge more
+                            confidently</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Superb Logo Guid.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-people-fill"></i></span>
+                        <h6>Content Writing Guide</h6>
+                        <p>A simple writing playbook to attract, engage, and convert—using clarity, value, and a human
+                            voice.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Content Writing.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="fas fa-key"></i></span>
+                        <h6>Agency Hiring Guide</h6>
+                        <p>Ask the right questions before hiring—so you choose a team that truly fits your goals.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Agency hiring guid.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
+
+                 <!-- Card 3 -->
+                <div class="col-lg-4 col-sm-6 mb-4" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <div class="item text-center">
+                        <span class="icon feature_box_col_three"><i class="bi bi-journal-richtext"></i></span>
+                        <h6>Meta Ads Checklist</h6>
+                        <p>Run smarter real estate ads—save budget, get leads, and boost ROI.</p>
+                        <button class="btn btn-sm btn-get-started mt-2 btnOpenForm" data-file="assets/images/PDF/Meta Ads Checklist for Real Estate Owners.pdf">
+                            <i class="bi bi-download me-1"></i> Download Now
+                        </button>
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
 
 
-        </section>
-    </main>
 
+    <!-- ***** Features Big Item Start ***** -->
+    <div class="left-image-decor"></div>
+    <section class="section" id="promotion">
+        <div class="container">
+            <div class="row">
+                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="row align-items-center section-title justify-content-between" style="text-align: left;"
+                        data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                        <div class="col-md-12">
+                            <h2>Our Core Services</h2>
+                        </div>
+                    </div>
+                    <ul>
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                            <div class="icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Branding</h4>
+                                <p>We help you build a unique, consistent, and powerful brand identity across all
+                                    platforms.</p>
+                            </div>
+                        </li>
+
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                            <div class="icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Website Development</h4>
+                                <p>Custom, fast, and mobile-friendly websites built to attract and convert visitors.</p>
+                            </div>
+                        </li>
+
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.7s">
+                            <div class="icon">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Social Media Marketing</h4>
+                                <p>Reels, captions & content strategies that grow your followers and build engagement.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.7s">
+                            <div class="icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Performance Marketing</h4>
+                                <p>Run smart ad campaigns that drive real traffic, leads, and conversions.</p>
+                            </div>
+                        </li>
+
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.7s">
+                            <div class="icon">
+                                <i class="fas fa-pen-nib"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Content Writing</h4>
+                                <p>SEO-friendly, engaging content for websites, social media, blogs, and more.</p>
+                            </div>
+                        </li>
+
+                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.7s">
+                            <div class="icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <div class="text">
+                                <h4>Graphic & Motion Design</h4>
+                                <p>Eye-catching designs, logos & reels that visually elevate your brand.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="right-image-decor"></div>
+
+    <!-- ***** Testimonials Starts ***** -->
+    <section class="section" id="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="row align-items-center section-title justify-content-center"
+                    data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
+                    <div class="col-md-12">
+                        <h2>What Our Clients Say About Us</h2>
+                        <p>Our clients don’t just get services — they get results. Here's what they have to say about
+                            working with Brand Masterss.</p>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
+                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/img/clients/om balaji.png" alt="Author One"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <!-- <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul> -->
+
+                                <p>Om Balaji Autodraps was a growing business in the automatic motorised curtain but
+                                    lacked a
+                                    distinctive identity and brand presence in a competitive market.We crafted a
+                                    complete branding
+                                    strategy—from logo refinement, brand positioning, digital presence. We focused on
+                                    highlighting their
+                                    unique value in auto interiors and accessories while building a trustworthy, premium
+                                    identity.</p>
+                                <h4>Om Balaji Autodraps</h4>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/img/clients/Madhavbaug.png" alt="Second Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <!-- <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul> -->
+
+                                <p>We played a key role in transforming Madhavbaug into a recognizable and trusted brand
+                                    in the
+                                    Ayurvedic and cardiac healthcare space.From strategic brand positioning to digital
+                                    presence, we
+                                    built a cohesive identity that connects with both traditional and modern
+                                    health-conscious
+                                    audiences.Madhavbaug is now not just a name, but a brand that speaks wellness,
+                                    trust, and results —
+                                    and we’re proud to be the team behind it.</p>
+                                <h4>Madhavbaug</h4>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/img/clients/rohit sane.png" alt="Author Third"></i>
+                            </div>
+                            <div class="testimonial-content">
+
+                                <p>“FWe helped Dr. Rohit Sane,
+                                    a visionary leader in the healthcare industry, transform into a powerful personal
+                                    brand.
+                                    Through a strategic blend of visual identity, content positioning, and digital
+                                    storytelling, we
+                                    elevated his online presence — making his expertise not just known, but influential.
+                                </p>
+                                <h4>Rohit Sane</h4>
+                            </div>
+                        </div>
+                        <div class="item service-item">
+                            <div class="author">
+                                <i><img src="assets/img/clients/rajan.png" alt="Fourth Author"></i>
+                            </div>
+                            <div class="testimonial-content">
+                                <!-- <ul class="stars">
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                    <li><i class="fa fa-star"></i></li>
+                                </ul> -->
+
+                                <p>We partnered with Rajan Interio to transform a local interior business into a
+                                    recognizable brand.
+                                    From crafting a unique brand identity to building a strong digital presence, we
+                                    developed a cohesive
+                                    branding strategy that elevated their market positioning and drove customer trust.
+                                    Today, Rajan
+                                    Interio stands out as a name synonymous with quality interior solutions.</p>
+                                <h4>Rajan Interio</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer Start ***** -->
     <footer id="footer" class="footer dark-background">
 
         <div class="container footer-top">
@@ -800,36 +650,415 @@
         </div>
 
     </footer>
-    
-<a id="whatsapp-button" href="" onclick="openWhatsApp()" title="Chat on WhatsApp">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt="WhatsApp" />
-</a>
+
 
 <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <a id="whatsapp-button" href="" onclick="openWhatsApp()" title="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt="WhatsApp" />
+</a>
+    <!-- ***** Popup Form ***** -->
+    <div class="form-popup-bg">
+        <div class="form-container">
+            <button id="btnCloseForm" class="close-button">X</button>
+            <h1>Let’s Stay Connected!</h1>
+            <p>Get expert insights, exclusive resources, or a free consultation—just drop your details below.</p>
+            <form action="" method="post" class="pop-up-form" id="leadformdata">
+                <div class="form-group">
+                    <input type="text" name="name" required placeholder="Enter Name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="Email" name="email" required placeholder="Enter Email" />
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="tel" name="phone" required placeholder="Enter Phone Number" />
+                </div>
+                <button class="btn-get-started" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function closeForm() {
+            document.querySelector(".form-popup-bg").classList.remove("is-visible");
+        }
 
- 
+        document.addEventListener("DOMContentLoaded", function () {
+            // Open the popup
+            document.querySelectorAll('.btnOpenForm').forEach((btn) => {
+                btn.addEventListener('click', function () {
+                    event.preventDefault();
+                    document.querySelector(".form-popup-bg").classList.add("is-visible");
+                });
+            });
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
- 
-      <script>
-        window.addEventListener("load", function () {
-            const loader = document.getElementById("loader-wrapper");
-            loader.style.display = "none";
+            // Close popup when clicking on background or close button
+            document.querySelector(".form-popup-bg").addEventListener("click", function (event) {
+                if (
+                    event.target.classList.contains("form-popup-bg") ||
+                    event.target.id === "btnCloseForm"
+                ) {
+                    event.preventDefault();
+                    this.classList.remove("is-visible");
+                }
+            });
         });
+    </script>
+   <script>
+let downloadUrl = "";
+
+// Open popup and store download URL
+document.querySelectorAll('.btnOpenForm').forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        downloadUrl = this.getAttribute("data-file");
+        document.querySelector(".form-popup-bg").classList.add("is-visible");
+    });
+});
+
+document.getElementById("leadformdata").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const form = this;
+
+    // Get values
+    const name = form.querySelector("input[name='name']").value.trim();
+    const email = form.querySelector("input[name='email']").value.trim();
+    const mobile = form.querySelector("input[name='phone']").value.trim();
+
+    // Validation regex
+    const nameRegex = /^[A-Za-z\s]{3,30}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const mobileRegex = /^[0-9]{10}$/;
+
+    // Validate Name
+    if (!nameRegex.test(name)) {
+        alert("Please enter a valid name (letters and spaces only, 3–30 characters).");
+        return;
+    }
+
+    // Validate Email
+    if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    // Validate Mobile
+    if (!mobileRegex.test(mobile)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return;
+    }
+
+    // Disable submit button
+    const submitButton = form.querySelector("button[type='submit']");
+    submitButton.disabled = true;
+    submitButton.innerText = "Submitting...";
+
+    const formData = new FormData(form);
+
+    // Submit to Google Script
+    fetch("https://script.google.com/macros/s/AKfycbwFSelS8lzOYJPLPth3f1EHbHwnOru4nEMzjCjo0ejpJFaLZwDsAr6Bzr2MSzCA7QU/exec", {
+        method: "POST",
+        body: formData,
+    })
+    .then(res => res.text())
+    .then(response => {
+        alert("Thank you! Your details have been submitted.");
+        form.reset();
+        document.querySelector(".form-popup-bg").classList.remove("is-visible");
+
+        // Trigger download
+        if (downloadUrl) {
+            const link = document.createElement('a');
+            link.href = downloadUrl;
+            link.download = '';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    })
+    .catch(error => {
+        alert("Oops! Something went wrong.");
+        console.error("Error!", error.message);
+    })
+    .finally(() => {
+        // Enable button again
+        submitButton.disabled = false;
+        submitButton.innerText = "Submit";
+    });
+});
+</script>
+
+
+
+
+    </script>
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Global Init -->
+    <script>
+        (function ($) {
+
+            "use strict";
+
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 30,
+                nav: true,
+                pagination: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 2
+                    }
+                }
+            })
+
+
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                var box = $('.header-text').height();
+                var header = $('header').height();
+
+                if (scroll >= box - header) {
+                    $("header").addClass("background-header");
+                } else {
+                    $("header").removeClass("background-header");
+                }
+            });
+
+            // Window Resize Mobile Menu Fix
+            mobileNav();
+
+
+            // Scroll animation init
+            window.sr = new scrollReveal();
+
+
+            // Menu Dropdown Toggle
+            if ($('.menu-trigger').length) {
+                $(".menu-trigger").on('click', function () {
+                    $(this).toggleClass('active');
+                    $('.header-area .nav').slideToggle(200);
+                });
+            }
+
+
+            // Menu elevator animation
+            $('a[href*=\\#]:not([href=\\#])').on('click', function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var targetHash = this.hash;
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        var width = $(window).width();
+                        if (width < 991) {
+                            $('.menu-trigger').removeClass('active');
+                            $('.header-area .nav').slideUp(200);
+                        }
+                        $('html,body').animate({
+                            scrollTop: (target.offset().top)
+                        }, 700, 'swing', function () {
+                            window.location.hash = targetHash;
+                        });
+                        return false;
+                    }
+                }
+            });
+
+            $(document).ready(function () {
+                $('a[href^="#welcome"]').addClass('active');
+
+                //smoothscroll
+                $('.menu-item').on('click', function (e) {
+                    e.preventDefault();
+                    var athis = this;
+                    var target = this.hash,
+                        menu = target;
+                    var $target = $(target);
+
+                    $('html, body').stop().animate({
+                        'scrollTop': $target.offset().top
+                    }, 500, 'swing', function () {
+                        window.location.hash = target;
+                        $('.menu-item').removeClass('active');
+                        $(athis).addClass('active');
+                    });
+                });
+
+                $(window).scroll(function (event) {
+                    var scrollPos = $(document).scrollTop() + 80;
+
+                    if (scrollPos === 0) {
+                        $('a[href^="#welcome"]').addClass('active');
+                        return;
+                    }
+                    $('.menu-item').not('[href=""]').not('[href="javascript:;"]').each(function () {
+                        var currLink = $(this);
+                        var refElement = $(currLink.attr("href"));
+
+                        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                            $('.menu-item').removeClass("active");
+                            currLink.addClass("active");
+                        } else {
+                            currLink.removeClass("active");
+                        }
+                    });
+                })
+            });
+
+            const Accordion = {
+                settings: {
+                    // Expand the first item by default
+                    first_expanded: false,
+                    // Allow items to be toggled independently
+                    toggle: false
+                },
+
+                openAccordion: function (toggle, content) {
+                    if (content.children.length) {
+                        toggle.classList.add("is-open");
+                        let final_height = Math.floor(content.children[0].offsetHeight);
+                        content.style.height = final_height + "px";
+                    }
+                },
+
+                closeAccordion: function (toggle, content) {
+                    toggle.classList.remove("is-open");
+                    content.style.height = 0;
+                },
+
+                init: function (el) {
+                    const _this = this;
+
+                    // Override default settings with classes
+                    let is_first_expanded = _this.settings.first_expanded;
+                    if (el.classList.contains("is-first-expanded")) is_first_expanded = true;
+                    let is_toggle = _this.settings.toggle;
+                    if (el.classList.contains("is-toggle")) is_toggle = true;
+
+                    // Loop through the accordion's sections and set up the click behavior
+                    const sections = el.getElementsByClassName("accordion");
+                    const all_toggles = el.getElementsByClassName("accordion-head");
+                    const all_contents = el.getElementsByClassName("accordion-body");
+                    for (let i = 0; i < sections.length; i++) {
+                        const section = sections[i];
+                        const toggle = all_toggles[i];
+                        const content = all_contents[i];
+
+                        // Click behavior
+                        toggle.addEventListener("click", function (e) {
+                            if (!is_toggle) {
+                                // Hide all content areas first
+                                for (let a = 0; a < all_contents.length; a++) {
+                                    _this.closeAccordion(all_toggles[a], all_contents[a]);
+                                }
+
+                                // Expand the clicked item
+                                _this.openAccordion(toggle, content);
+                            } else {
+                                // Toggle the clicked item
+                                if (toggle.classList.contains("is-open")) {
+                                    _this.closeAccordion(toggle, content);
+                                } else {
+                                    _this.openAccordion(toggle, content);
+                                }
+                            }
+                        });
+
+                        // Expand the first item
+                        if (i === 0 && is_first_expanded) {
+                            _this.openAccordion(toggle, content);
+                        }
+                    }
+                }
+            };
+
+            (function () {
+                // Initiate all instances on the page
+                const accordions = document.getElementsByClassName("accordions");
+                for (let i = 0; i < accordions.length; i++) {
+                    Accordion.init(accordions[i]);
+                }
+            })();
+
+
+
+            // Home seperator
+            if ($('.home-seperator').length) {
+                $('.home-seperator .left-item, .home-seperator .right-item').imgfix();
+            }
+
+
+            // Home number counterup
+            if ($('.count-item').length) {
+                $('.count-item strong').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
+            }
+
+
+            // Page loading animation
+            $(window).on('load', function () {
+                if ($('.cover').length) {
+                    $('.cover').parallax({
+                        imageSrc: $('.cover').data('image'),
+                        zIndex: '1'
+                    });
+                }
+
+                $("#preloader").animate({
+                    'opacity': '0'
+                }, 600, function () {
+                    setTimeout(function () {
+                        $("#preloader").css("visibility", "hidden").fadeOut();
+                    }, 300);
+                });
+            });
+
+
+            // Window Resize Mobile Menu Fix
+            $(window).on('resize', function () {
+                mobileNav();
+            });
+
+
+            // Window Resize Mobile Menu Fix
+            function mobileNav() {
+                var width = $(window).width();
+                $('.submenu').on('click', function () {
+                    if (width < 992) {
+                        $('.submenu ul').removeClass('active');
+                        $(this).find('ul').toggleClass('active');
+                    }
+                });
+            }
+
+
+        })(window.jQuery);
     </script>
 
 </body>
